@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer url</title>
+</head>
+<body>
+
+    <h1>Bienvenidos a mi primer web</h1>
+
+    <p>Listado de familiares</p>
+
+    <ul>
+        {% for item in listado_familiares %}
+          <li> {{item.nombre}}, edad {{item.edad}}, fecha de nacimiento {{item.fecha}} </li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>
+</html>
